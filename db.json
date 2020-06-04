@@ -1,0 +1,281 @@
+{
+  "estados": [
+    {
+      "id": 1,
+      "nombre": "Activo",
+      "descripcion": "El usuario esta activo",
+      "creado": "28/03/1997",
+      "actualizado": "30/11/2010"
+    },
+
+    {
+      "id": 2,
+      "nombre": "Suspendido",
+      "descripcion": "Suspendido por mora activa",
+      "creado": "28/03/1997",
+      "actualizado": "30/11/2010"
+    },
+
+    {
+      "id": 1,
+      "nombre": "Desactivado",
+      "descripcion": "El usuario esta desactivado",
+      "creado": "28/03/1997",
+      "actualizado": "30/11/2010"
+    }
+  ],
+
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Ana",
+      "apellido": "Saravia",
+      "password": "569235",
+      "correo": "profesor@mail.com",
+      "direccion": "sierra morena 1",
+      "telefono": "78698500",
+      "creado": "28/03/2020",
+      "actualizado":"30/11/2020",
+      "idEstado": 1,
+      "idRol": 1
+    },
+
+    {
+      "id": 2,
+      "nombre": "Steven",
+      "apellido": "Martinez",
+      "password": "569235",
+      "correo": "bibliotecario@mail.com",
+      "direccion": "Aguas calientes 1",
+      "telefono": "78633306",
+      "creado": "08/02/2020",
+      "actualizado":"29/11/2020",
+      "idEstado": 1,
+      "idRol": 2
+    },
+
+    {
+      "id": 3,
+      "nombre": "Mayra",
+      "apellido": "Roque",
+      "password": "569235",
+      "correo": "estudiante@mail.com",
+      "direccion": "Ayutuxtepeque 1",
+      "telefono": "75692365",
+      "creado": "14/02/2020",
+      "actualizado":"16/09/2020",
+      "idEstado": 1,
+      "idRol": 3
+    }
+  ],
+
+  "historial":[
+    {
+      "id": 1,
+      "ingreso": "29/03/2020",
+      "idUsuario": "ana"
+    }
+  ],
+
+  "roles": [
+    {
+      "id": 1,
+      "nombre": "Profesor",
+      "descripcion": "Catedrático",
+      "creado": "01/02/2012",
+      "actualizado": "27/01/2020"
+    },
+
+    {
+      "id": 2,
+      "nombre": "Bibliotecario",
+      "descripcion": "Supervisor de biblioteca",
+      "creado": "01/02/2000",
+      "actualizado": "27/01/2020"
+    },
+
+    {
+      "id": 3,
+      "nombre": "Estudiante",
+      "descripcion": "Alumnado",
+      "creado": "01/02/2000",
+      "actualizado": "27/01/2020"
+    }
+  ],
+
+  "configuracionesPrestamos": [
+    {
+      "id": 1,
+      "moraPorDia": "1",
+      "creacion": "27/01/2020",
+      "idRol": "Estudiante"
+    }
+  ],
+
+  "prestamos":[
+    {
+      "id":1,
+      "fechaPrestamo": "06/06/2020",
+      "fechaDevolucion": "07/06/2020",
+      "idConfiguaracion": 1,
+      "idPago": 1,
+      "idUsuario": 1,
+      "idBibliotecario": 2,
+      "idLibro": 1
+    }
+  ],
+
+  "pagos":[
+    {
+      "id": 1,
+      "totalPagado": "5.00",
+      "fechaPago": "14/05/2020",
+      "idUsuario": 1
+    }
+  ],
+
+  "libros":[
+    {
+      "id": 1,
+      "titulo": "El principito",
+      "ISBN": "152452-5353-1220",
+      "cantidadEjemplares": 200,
+      "totalPaginas": 150,
+      "fechaPublicacion": "26/08/1973",
+      "edicion": "Primera",
+      "actualizado": "30/08/1975",
+      "editorial": "Rainbows Latam"
+    },
+
+    {
+      "id": 2,
+      "titulo": "Orgullo y prejuicio",
+      "ISBN": "152452-5353-1220",
+      "cantidadEjemplares": 200,
+      "totalPaginas": 150,
+      "fechaPublicacion": "26/08/1883",
+      "edicion": "Segunda",
+      "actualizado": "30/08/1950",
+      "editorial": "Rainbows Latam"
+    },
+
+    {
+      "id": 3,
+      "titulo": "La gallina turuleca",
+      "ISBN": "152452-5353-1220",
+      "cantidadEjemplares": 200,
+      "totalPaginas": 150,
+      "fechaPublicacion": "26/08/1960",
+      "edicion": "!uinta",
+      "actualizado": "30/08/1995",
+      "editorial": "Rainbows Latam"
+    }
+  ],
+
+  "librosCategoria":[
+    {
+      "id": 1,
+      "idCategoria": 1,
+      "idLibro": 1
+    }
+  ],
+
+  "categorias":[
+    {
+      "id": 1,
+      "nombre": "Ficcion",
+      "descripcion": "Que no es real",
+      "creado": "05/07/2015",
+      "actualizado": "05/08/2016"
+    },
+
+    {
+      "id": 2,
+      "nombre": "Poesia",
+      "descripcion": "Versos del ayer",
+      "creado": "05/07/2015",
+      "actualizado": "05/08/2016"
+    },
+
+    {
+      "id": 3,
+      "nombre": "Biografias",
+      "descripcion": "Este sí es real es real",
+      "creado": "05/07/2015",
+      "actualizado": "05/08/2016"
+    }
+  ],
+
+  "libroAutores":[
+    {
+      "id": 1,
+      "idAutor": 1,
+      "idLibro": 1
+    }
+  ],
+
+  "autores":[
+    {
+      "id": 1,
+      "nombre": "Antoine de Saint",
+      "apellido": "Exupery",
+      "creado": "28/03/1997",
+      "actualizado":"27/01/2020",
+      "idPais": 1
+    },
+
+    {
+      "id": 2,
+      "nombre": "Carlos",
+      "apellido": "Exupery",
+      "creado": "28/03/1997",
+      "actualizado":"27/01/2020",
+      "idPais": 1
+    },
+
+    {
+      "id": 3,
+      "nombre": "Carmela",
+      "apellido": "Exupery",
+      "creado": "28/03/1997",
+      "actualizado":"27/01/2020",
+      "idPais": 1
+    }
+  ],
+
+  "paises": [
+    {
+      "id": 1,
+      "nombre": "Francia",
+      "creado": "28/03/2018",
+      "actualizado": "30/08/2019"
+    },
+
+    {
+      "id": 1,
+      "nombre": "Japon",
+      "creado": "28/03/2018",
+      "actualizado": "30/08/2019"
+    },
+
+    {
+      "id": 1,
+      "nombre": "Canada",
+      "creado": "28/03/2018",
+      "actualizado": "30/08/2019"
+    }
+  ],
+
+  "editoriales": [
+    {
+      "id": 1,
+      "nombreEditorial": "Rainbows Latam",
+      "dirección": "La france, paris",
+      "telefono": "369521560",
+      "correo": "rlf@literature.com",
+      "creado": "28/03/2018",
+      "actualizado": "30/08/2019",
+      "idPais": 1
+    }
+  ]
+}
