@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--bootstrap CSS-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <title>Registrar libro</title>
+</head>
+
+<body class="bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 ">
+      </div>
+      <div class="col-md-6 mt-5 py-lg-5">
+        <div class="card">
+          <div class="card-body">
+            <form class="m-5">
+              <h1 class="display-5 text-center text-secondary">Resgistro libro</h1>
+              <div class="form-group row">
+                <input placeholder="" class="form-control col-9" type="hidden"></input>
+              </div>
+              <div class="form-group row">
+                <label for="" class=" col-sm-4 col-md-4 col-lg-4 col-form-label">Titulo:</label>
+                <input placeholder="Agregar titulo" class="form-control col-sm-8 col-md-8 col-lg-8"></input>
+              </div>
+              <div class="form-group row">
+                <label for="" class="col-sm-4 col-md-4 col-lg-4 col-form-label">ISBN:</label>
+                <input placeholder="xxx-xxxxxxxxxx" class="form-control col-sm-8 col-md-8 col-lg-8"></input>
+              </div>
+              <div class="form-group row">
+                <label for="" class="col-sm-4 col-md-4 col-lg-4 col-form-label">Ejemplares:</label>
+                <input placeholder="Ej. 10" class="form-control col-sm-8 col-md-8 col-lg-8"></input>
+              </div>
+              <div class="form-group row">
+                <label for="" class="col-sm-4 col-md-4 col-lg-4 col-form-label">Total páginas:</label>
+                <input placeholder="Eje. 200" class="form-control col-sm-8 col-md-8 col-lg-8"></input>
+              </div>
+              <div class="form-group row">
+                <label for="" class="col-sm-4 col-md-4 col-lg-4 col-form-label">Edicion:</label>
+                <input placeholder="Eje. Primera" class="form-control col-sm-8 col-md-8 col-lg-8"></input>
+              </div>
+              <div class="form-group row">
+                <label for="select1" class="col-sm-4 col-md-4 col-lg-4">Editorial:</label>
+                <select name="select1" id="select1" class="form-control col-sm-8 col-md-8 col-lg-8">
+                  <option value="">--- Seleccionar ---</option>
+                  <option value="1">Nuevo mundo</option>
+                  <option value="2">Rainbows Latam</option>
+                  <option value="3">Ramdom House, Inc</option>
+                </select>
+              </div>
+              <div class="form-group row py-4">
+                <label class="col-sm-5 col-md-5 col-lg-5">Etiquetas:</label>
+                <div class="form-group row">
+                  <span class="badge badge-secondary badge-pill">Ciencia x</span>
+                  <span class="badge badge-secondary badge-pill">Quimica x</span>
+                  <span class="badge badge-secondary badge-pill">Fisica x</span>
+                </div>
+              </div>
+              <div class="form-group row py-3">
+                <div class="col-md-5"></div>
+                <button class="btn btn-success" type="submit">Guardar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 "></div>
+    </div>
+  </div>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
