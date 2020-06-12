@@ -26,36 +26,121 @@
   ],
 
   "usuarios": [
+
     {
       "id": 1,
-      "nombre": "Ana",
-      "apellido": "Saravia",
+      "nombre": "Lucas",
+      "apellido": "Guandique",
       "password": "569235",
       "correo": "profesor@mail.com",
-      "direccion": "sierra morena 1",
-      "telefono": "78698500",
-      "creado": "28/03/2020",
-      "actualizado":"30/11/2020",
+      "direccion": "Apopa 1",
+      "telefono": "73690365",
+      "creado": "14/02/2020",
+      "actualizado":"16/09/2020",
       "idEstado": 1,
       "idRol": 1
     },
 
     {
       "id": 2,
-      "nombre": "Steven",
-      "apellido": "Martinez",
+      "nombre": "Jeannette",
+      "apellido": "Orellana",
+      "password": "569235",
+      "correo": "profesor@mail.com",
+      "direccion": "Vista al lago",
+      "telefono": "75612065",
+      "creado": "14/02/2020",
+      "actualizado":"16/09/2020",
+      "idEstado": 1,
+      "idRol": 1
+    },
+
+    {
+      "id": 3,
+      "nombre": "Humberto",
+      "apellido": "Villalobos",
+      "password": "569235",
+      "correo": "profesor@mail.com",
+      "direccion": "Santa Tecla",
+      "telefono": "70001365",
+      "creado": "14/02/2020",
+      "actualizado":"16/09/2020",
+      "idEstado": 1,
+      "idRol": 1
+    },
+
+    {
+      "id": 4,
+      "nombre": "Marta",
+      "apellido": "Gutierrez",
       "password": "569235",
       "correo": "bibliotecario@mail.com",
-      "direccion": "Aguas calientes 1",
-      "telefono": "78633306",
-      "creado": "08/02/2020",
-      "actualizado":"29/11/2020",
+      "direccion": "Zaragoza",
+      "telefono": "73690365",
+      "creado": "14/02/2010",
+      "actualizado":"16/09/2020",
       "idEstado": 1,
       "idRol": 2
     },
 
     {
-      "id": 3,
+      "id": 5,
+      "nombre": "Rene",
+      "apellido": "Mejia",
+      "password": "569235",
+      "correo": "bibliotecario@mail.com",
+      "direccion": "Las Colinas",
+      "telefono": "75612065",
+      "creado": "14/02/2010",
+      "actualizado":"16/09/2020",
+      "idEstado": 1,
+      "idRol": 2
+    },
+
+    {
+      "id": 6,
+      "nombre": "Rosa",
+      "apellido": "Rosales",
+      "password": "569235",
+      "correo": "bibliotecario@mail.com",
+      "direccion": "Santa Tecla",
+      "telefono": "70001365",
+      "creado": "14/02/2010",
+      "actualizado":"16/09/2020",
+      "idEstado": 1,
+      "idRol": 2
+    },
+
+    {
+      "id": 7,
+      "nombre": "Ana",
+      "apellido": "Saravia",
+      "password": "569235",
+      "correo": "estudiante@mail.com",
+      "direccion": "sierra morena 1",
+      "telefono": "78698500",
+      "creado": "28/03/2020",
+      "actualizado":"30/11/2020",
+      "idEstado": 1,
+      "idRol": 3
+    },
+
+    {
+      "id": 8,
+      "nombre": "Steven",
+      "apellido": "Martinez",
+      "password": "569235",
+      "correo": "estudiante@mail.com",
+      "direccion": "Aguas calientes 1",
+      "telefono": "78633306",
+      "creado": "08/02/2020",
+      "actualizado":"29/11/2020",
+      "idEstado": 1,
+      "idRol": 3
+    },
+
+    {
+      "id": 9,
       "nombre": "Mayra",
       "apellido": "Roque",
       "password": "569235",
@@ -73,7 +158,19 @@
     {
       "id": 1,
       "ingreso": "29/03/2020",
-      "idUsuario": "ana"
+      "idUsuario": "1"
+    },
+
+    {
+      "id": 2,
+      "ingreso": "30/03/2020",
+      "idUsuario": "4"
+    },
+
+    {
+      "id": 3,
+      "ingreso": "31/03/2020",
+      "idUsuario": "7"
     }
   ],
 
@@ -137,38 +234,38 @@
   "libros":[
     {
       "id": 1,
-      "titulo": "El principito",
+      "titulo": "La teoria del todo",
       "ISBN": "152452-5353-1220",
       "cantidadEjemplares": 200,
       "totalPaginas": 150,
       "fechaPublicacion": "26/08/1973",
       "edicion": "Primera",
       "actualizado": "30/08/1975",
-      "editorial": "Rainbows Latam"
+      "editorial": "1"
     },
 
     {
       "id": 2,
-      "titulo": "Orgullo y prejuicio",
+      "titulo": "Quimica cuantica",
       "ISBN": "152452-5353-1220",
       "cantidadEjemplares": 200,
       "totalPaginas": 150,
       "fechaPublicacion": "26/08/1883",
       "edicion": "Segunda",
       "actualizado": "30/08/1950",
-      "editorial": "Rainbows Latam"
+      "editorial": "2"
     },
 
     {
       "id": 3,
-      "titulo": "La gallina turuleca",
+      "titulo": "Ciencias naturales",
       "ISBN": "152452-5353-1220",
       "cantidadEjemplares": 200,
       "totalPaginas": 150,
       "fechaPublicacion": "26/08/1960",
-      "edicion": "!uinta",
+      "edicion": "quinta",
       "actualizado": "30/08/1995",
-      "editorial": "Rainbows Latam"
+      "editorial": "3"
     }
   ],
 
@@ -211,6 +308,18 @@
       "id": 1,
       "idAutor": 1,
       "idLibro": 1
+    },
+
+    {
+      "id": 2,
+      "idAutor": 2,
+      "idLibro": 2
+    },
+
+    {
+      "id": 3,
+      "idAutor": 3,
+      "idLibro": 3
     }
   ],
 
@@ -227,19 +336,19 @@
     {
       "id": 2,
       "nombre": "Carlos",
-      "apellido": "Exupery",
+      "apellido": "Williams",
       "creado": "28/03/1997",
       "actualizado":"27/01/2020",
-      "idPais": 1
+      "idPais": 2
     },
 
     {
       "id": 3,
       "nombre": "Carmela",
-      "apellido": "Exupery",
+      "apellido": "Prieto",
       "creado": "28/03/1997",
       "actualizado":"27/01/2020",
-      "idPais": 1
+      "idPais": 3
     }
   ],
 
@@ -252,14 +361,14 @@
     },
 
     {
-      "id": 1,
+      "id": 2,
       "nombre": "Japon",
       "creado": "28/03/2018",
       "actualizado": "30/08/2019"
     },
 
     {
-      "id": 1,
+      "id": 3,
       "nombre": "Canada",
       "creado": "28/03/2018",
       "actualizado": "30/08/2019"
@@ -267,15 +376,38 @@
   ],
 
   "editoriales": [
+
     {
       "id": 1,
-      "nombreEditorial": "Rainbows Latam",
+      "nombreEditorial": "Nuevo mundo",
       "dirección": "La france, paris",
       "telefono": "369521560",
-      "correo": "rlf@literature.com",
+      "correo": "nm@literature.com",
       "creado": "28/03/2018",
       "actualizado": "30/08/2019",
       "idPais": 1
+    },
+
+    {
+      "id": 2,
+      "nombreEditorial": "Rainbows Latam",
+      "dirección": "Tokio, Japon",
+      "telefono": "369521560",
+      "correo": "rl@literature.com",
+      "creado": "28/03/2018",
+      "actualizado": "30/08/2019",
+      "idPais": 2
+    },
+
+    {
+      "id": 3,
+      "nombreEditorial": "Ramdon House, Inc",
+      "dirección": "Otawa",
+      "telefono": "369521560",
+      "correo": "rh@literature.com",
+      "creado": "28/03/2018",
+      "actualizado": "30/08/2019",
+      "idPais": 3
     }
   ]
 }
