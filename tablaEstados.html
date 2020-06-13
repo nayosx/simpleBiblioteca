@@ -92,33 +92,33 @@
       </li>
 	  
 <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAutores" aria-expanded="true"
           aria-controls="collapseaAutores">
           <i class="fas fa-fw fa-book"></i>
           <span>Autores</span>
         </a>
-        <div id="collapseAutores" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div id="collapseLibros" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded ">
             <h6 class="collapse-header">Acciones</h6>
             <a class="collapse-item" href="agregarAutor.html">Agregrar</a>
-            <a class="collapse-item" href="tablaAutores.html">Listar</a>
+            <a class="collapse-item active" href="tablaAutores.html">Listar</a>
           </div>
         </div>
       </li>
 	  
 <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEditoriales" aria-expanded="true"
           aria-controls="collapseEditoriales">
           <i class="fas fa-fw fa-book"></i>
           <span>Editoriales</span>
         </a>
-        <div id="collapseEditoriales" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div id="collapseEditoriales" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded ">
             <h6 class="collapse-header">Acciones</h6>
             <a class="collapse-item" href="agregarEditorial.html">Agregrar</a>
-            <a class="collapse-item" href="tablaEditoriales.html">Listar</a>
+            <a class="collapse-item active" href="tablaEditoriales.html">Listar</a>
           </div>
         </div>
       </li>
@@ -156,22 +156,21 @@
       </li>
 	  
 	  <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item ">
+      <li class="nav-item active">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEstados" aria-expanded="true"
           aria-controls="collapseEstados">
           <i class="fas fa-fw fa-user-tag"></i>
-          <span>Estado</span>
+          <span>Estados</span>
         </a>
-        <div id="collapseEstados" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div id="collapseEstados" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Acciones</h6>
             <a class="collapse-item" href="agregarEstado.html">Agregrar</a>
-            <a class="collapse-item " href="tablaEstados.html">Listar</a>
+            <a class="collapse-item active" href="tablaEstados.html">Listar</a>
           </div>
         </div>
       </li>
 	  
-
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
 
@@ -389,8 +388,8 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-            <li class="breadcrumb-item"><a href="#">Autores</a></li>
-            <li class="breadcrumb-item active">Lista de Autores</li>
+            <li class="breadcrumb-item"><a href="#">Estados</a></li>
+            <li class="breadcrumb-item active">Lista de Estados</li>
           </ol>
         </nav>
 
@@ -399,7 +398,7 @@
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Lista de Autores</h1>
+            <h1 class="h3 mb-0 text-gray-800">Lista de Estados</h1>
           </div>
 
           <!-- Content Row -->
@@ -413,32 +412,28 @@
                         <tr class="table-primary">
                           <th>ID</th>
                           <th>NOMBRE</th>
-                          <th>APELLIDO</th>
+                          <th>DESCRIPCIÓN</th>
                           <th>CREADO</th>
-                          <th>PAÍS</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td>1</td>
-                          <td>Antoine de Saint</td>
-                          <td>Exupery</td>
-                          <td>28/03/1997</td>
-                          <td>Francia</td>
+                          <td>Activo</td>
+                          <td>El usuario esta activo</td>
+                          <td>27/01/2020</td>
                         </tr>
                         <tr>
                           <td>2</td>
-                          <td>Carlos</td>
-                          <td>Williams</td>
-                          <td>28/03/1997</td>
-                          <td>Japon</td>
+                          <td>Suspendido</td>
+                          <td>Suspendido por mora activa</td>
+                          <td>27/01/2020</td>
                         </tr>
                         <tr>
                           <td>3</td>
-                          <td>Carmela</td>
-                          <td>Prieto</td>
-                          <td>28/03/1997</td>
-                          <td>Canada</td>
+                          <td>Desactivado</td>
+                          <td>El usuario esta desactivado</td>
+                          <td>27/01/2020</td>
                         </tr>
                       </tbody>
                       
@@ -533,6 +528,51 @@
       $("#tabla").DataTable();
     });
   </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--bootstrap CSS-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <title>Roles de usuario</title>
+</head>
+
+<body class="bg-primary py-5">
+  <div class="container py-5 bg-light">
+    <h1 class="text-center">ROLES REGISTRADOS</h1>
+    <div class="table-responsive py-5">
+      <table class="table table-striped table-bordered table-hover text-center">
+        
+        
+      </table>
+    </div>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
