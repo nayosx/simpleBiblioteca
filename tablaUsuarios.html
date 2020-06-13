@@ -20,6 +20,8 @@
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.21/datatables.min.css"/>
+
 </head>
 
 <body id="page-top">
@@ -42,7 +44,7 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="index.html">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
@@ -56,18 +58,18 @@
         Interface
       </div>
 
-       <!-- Nav Item - Pages Collapse Menu -->
-       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
-          aria-controls="collapsePages">
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item active">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUsuarios" aria-expanded="true"
+          aria-controls="collapseUsuarios">
           <i class="fas fa-fw fa-book-reader"></i>
           <span>Usuarios</span>
         </a>
-        <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
+        <div id="collapseUsuarios" class="collapse show" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded ">
             <h6 class="collapse-header">Acciones</h6>
             <a class="collapse-item" href="agregarUsuario.html">Agregrar</a>
-            <a class="collapse-item" href="tablaUsuarios.html">Listar</a>
+            <a class="collapse-item active" href="tablaUsuarios.html">Listar</a>
           </div>
         </div>
       </li>
@@ -80,7 +82,7 @@
           <span>Libros</span>
         </a>
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
+          <div class="bg-white py-2 collapse-inner rounded ">
             <h6 class="collapse-header">Acciones</h6>
             <a class="collapse-item" href="agregarLibro.html">Agregrar</a>
             <a class="collapse-item" href="register.html">Listar</a>
@@ -106,8 +108,8 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEditorial" aria-expanded="true"
-          aria-controls="collapseEditorial">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseEditorial"
+          aria-expanded="true" aria-controls="collapseEditorial">
           <i class="fas fa-fw fa-address-card"></i>
           <span>Editoriales</span>
         </a>
@@ -137,13 +139,14 @@
       </li>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCategorias" aria-expanded="true"
-          aria-controls="collapseRoles">
+      <li class="nav-item ">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCategorias"
+          aria-expanded="true" aria-controls="collapseRoles">
           <i class="fas fa-fw fa-tags"></i>
           <span>Categorías</span>
         </a>
-        <div id="collapseCategorias" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+        <div id="collapseCategorias" class="collapse" aria-labelledby="headingPages"
+          data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Acciones</h6>
             <a class="collapse-item" href="agregarCategoria.html">Agregrar</a>
@@ -196,7 +199,7 @@
       <div id="content">
 
         <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        <nav class="navbar navbar-expand navbar-light bg-white topbar static-top shadow">
 
           <!-- Sidebar Toggle (Topbar) -->
           <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
@@ -383,299 +386,194 @@
 
         </nav>
         <!-- End of Topbar -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#">Usuario</a></li>
+            <li class="breadcrumb-item active">Lista de Usuarios</li>
+          </ol>
+        </nav>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+            <h1 class="h3 mb-0 text-gray-800">Lista de Usuarios</h1>
           </div>
 
           <!-- Content Row -->
           <div class="row">
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+              <div class="card shadow mb-4 px-4">
                 <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Earnings (Monthly)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                    </div>
+                  <div class="table-responsive py-5">
+                    <table id="tabla" class="table table-striped table-bordered table-hover text-center">
+                      <thead>
+                        <tr class="table-primary">
+                          <th>ID</th>
+                          <th>NOMBRE</th>
+                          <th>APELLIDO</th>
+                          <th>CORREO</th>
+                          <th>DIRECCIÓN</th>
+                          <th>TELÉFONO</th>
+                          <th>CREADO</th>
+                          <th>ROL</th>
+                          <th>ESTADO</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Lucas</td>
+                          <td>Guandique</td>
+                          <td>profesor@mail.com</td>
+                          <td>Apopa 1</td>
+                          <td>73690365</td>
+                          <td>14/02/2020</td>
+                          <td>Profesor</td>
+                          <td>Activo</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Jeannette</td>
+                          <td>Orellana</td>
+                          <td>profesor@mail.com</td>
+                          <td>Vista al lago</td>
+                          <td>75612065</td>
+                          <td>14/02/2020</td>
+                          <td>Profesor</td>
+                          <td>Activo</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Humberto</td>
+                          <td>Villalobos</td>
+                          <td>profesor@mail.com</td>
+                          <td>Santa Tecla</td>
+                          <td>70001365</td>
+                          <td>14/02/2020</td>
+                          <td>Profesor</td>
+                          <td>Activo</td>
+                        </tr>
+                
+                
+                        <tr>
+                          <td>4</td>
+                          <td>Marta</td>
+                          <td>Gutierrez</td>
+                          <td>bibliotecario@mail.com</td>
+                          <td>Zaragoza</td>
+                          <td>73690365</td>
+                          <td>14/02/2010</td>
+                          <td>Bibliotecario</td>
+                          <td>Activo</td>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Rene</td>
+                          <td>Mejia</td>
+                          <td>bibliotecario@mail.com</td>
+                          <td>Las Colinas</td>
+                          <td>75612065</td>
+                          <td>14/02/2010</td>
+                          <td>Bibliotecario</td>
+                          <td>Activo</td>
+                        </tr>
+                        <tr>
+                          <td>6</td>
+                          <td>Rosa</td>
+                          <td>Rosales</td>
+                          <td>bibliotecario@mail.com</td>
+                          <td>Santa Tecla</td>
+                          <td>70001365</td>
+                          <td>14/02/2010</td>
+                          <td>Bibliotecario</td>
+                          <td>Activo</td>
+                        </tr>
+                        <tr>
+                          <td>7</td>
+                          <td>Ana</td>
+                          <td>Saravia</td>
+                          <td>estudiante@mail.com</td>
+                          <td>sierra morena 1</td>
+                          <td>78698500</td>
+                          <td>28/03/2020</td>
+                          <td>Estudiante</td>
+                          <td><span class="badge badge-danger badge-pill">Eliminado</span></td>
+                        </tr>
+                        <tr>
+                          <td>8</td>
+                          <td>Steven</td>
+                          <td>Martinez</td>
+                          <td>estudiante@mail.com</td>
+                          <td>Aguas calientes 1</td>
+                          <td>78633306</td>
+                          <td>08/02/2020</td>
+                          <td>Estudiante</td>
+                          <td><span class="badge badge-secondary badge-pill">Suspendido</span></td>
+                        </tr>
+                        <tr>
+                          <td>9</td>
+                          <td>Mayra</td>
+                          <td>Roque"</td>
+                          <td>estudiante@mail.com</td>
+                          <td>Ayutuxtepeque 1</td>
+                          <td>75692365</td>
+                          <td>14/02/2020</td>
+                          <td>Estudiante</td>
+                          <td>
+                            <span class="badge badge-success badge-pill">Activo</span></td>
+                          </td>
+                        </tr>
+              
+                        <tr>
+                          <td>10</td>
+                          <td>Mayra</td>
+                          <td>Roque"</td>
+                          <td>estudiante@mail.com</td>
+                          <td>Ayutuxtepeque 1</td>
+                          <td>75692365</td>
+                          <td>14/02/2020</td>
+                          <td>Estudiante</td>
+                          <td>
+                            <span class="badge badge-success badge-pill">Activo</span></td>
+                          </td>
+                        </tr>
+              
+              
+                        <tr>
+                          <td>11</td>
+                          <td>Mayra</td>
+                          <td>Roque"</td>
+                          <td>estudiante@mail.com</td>
+                          <td>Ayutuxtepeque 1</td>
+                          <td>75692365</td>
+                          <td>14/02/2020</td>
+                          <td>Estudiante</td>
+                          <td>
+                            <span class="badge badge-success badge-pill">Activo</span></td>
+                          </td>
+                        </tr>
+              
+              
+                        <tr>
+                          <td>12</td>
+                          <td>Mayra</td>
+                          <td>Roque"</td>
+                          <td>estudiante@mail.com</td>
+                          <td>Ayutuxtepeque 1</td>
+                          <td>75692365</td>
+                          <td>14/02/2020</td>
+                          <td>Estudiante</td>
+                          <td>
+                            <span class="badge badge-success badge-pill">Activo</span></td>
+                          </td>
+                        </tr>
+                      </tbody>
+                      
+                    </table>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Earnings (Annual)</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-info shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks</div>
-                      <div class="row no-gutters align-items-center">
-                        <div class="col-auto">
-                          <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                        </div>
-                        <div class="col">
-                          <div class="progress progress-sm mr-2">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
-                              aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pending Requests Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pending Requests</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-comments fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Content Row -->
-
-          <div class="row">
-
-            <!-- Area Chart -->
-            <div class="col-xl-8 col-lg-7">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                      aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pie Chart -->
-            <div class="col-xl-4 col-lg-5">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-                      aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                      aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Dropdown Header:</div>
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <div class="chart-pie pt-4 pb-2">
-                    <canvas id="myPieChart"></canvas>
-                  </div>
-                  <div class="mt-4 text-center small">
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-primary"></i> Direct
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-success"></i> Social
-                    </span>
-                    <span class="mr-2">
-                      <i class="fas fa-circle text-info"></i> Referral
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Content Row -->
-          <div class="row">
-
-            <!-- Content Column -->
-            <div class="col-lg-6 mb-4">
-
-              <!-- Project Card Example -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
-                </div>
-                <div class="card-body">
-                  <h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20"
-                      aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Sales Tracking <span class="float-right">40%</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40"
-                      aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Customer Database <span class="float-right">60%</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0"
-                      aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Payout Details <span class="float-right">80%</span></h4>
-                  <div class="progress mb-4">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80"
-                      aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <h4 class="small font-weight-bold">Account Setup <span class="float-right">Complete!</span></h4>
-                  <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100"
-                      aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Color System -->
-              <div class="row">
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-primary text-white shadow">
-                    <div class="card-body">
-                      Primary
-                      <div class="text-white-50 small">#4e73df</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-success text-white shadow">
-                    <div class="card-body">
-                      Success
-                      <div class="text-white-50 small">#1cc88a</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-info text-white shadow">
-                    <div class="card-body">
-                      Info
-                      <div class="text-white-50 small">#36b9cc</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-warning text-white shadow">
-                    <div class="card-body">
-                      Warning
-                      <div class="text-white-50 small">#f6c23e</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-danger text-white shadow">
-                    <div class="card-body">
-                      Danger
-                      <div class="text-white-50 small">#e74a3b</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 mb-4">
-                  <div class="card bg-secondary text-white shadow">
-                    <div class="card-body">
-                      Secondary
-                      <div class="text-white-50 small">#858796</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="col-lg-6 mb-4">
-
-              <!-- Illustrations -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
-                </div>
-                <div class="card-body">
-                  <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
-                      src="img/undraw_posting_photo.svg" alt="">
-                  </div>
-                  <p>Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow"
-                      href="https://undraw.co/">unDraw</a>, a constantly updated collection of beautiful svg images that
-                    you can use completely free and without attribution!</p>
-                  <a target="_blank" rel="nofollow" href="https://undraw.co/">Browse Illustrations on unDraw &rarr;</a>
-                </div>
-              </div>
-
-              <!-- Approach -->
-              <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
-                </div>
-                <div class="card-body">
-                  <p>SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor
-                    page performance. Custom CSS classes are used to create custom components and custom utility
-                    classes.</p>
-                  <p class="mb-0">Before working with this theme, you should become familiar with the Bootstrap
-                    framework, especially the utility classes.</p>
                 </div>
               </div>
 
@@ -755,7 +653,23 @@
 
 
     });
+
+  </script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.21/datatables.min.js"></script>
+  
+  <script>
+    $(function() {
+      $("#tabla").DataTable();
+    });
   </script>
 </body>
 
 </html>
+
+
+
+
+
+
+
