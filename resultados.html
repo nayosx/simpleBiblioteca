@@ -29,7 +29,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="busqueda.html">
         <div>
           <img class="img-fluid rounded" src="img/ufg.jpg">
         </div>
@@ -116,15 +116,16 @@
           </button>
 
           <!-- Topbar Search -->
+          <!-- Topbar Search -->
           <form id="formSearchBook"
             class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
               <input type="text" class="form-control bg-light border-0 small" placeholder="Buscar libro..."
                 aria-label="Search" aria-describedby="basic-addon2" required>
               <div class="input-group-append">
-                <button class="btn btn-primary" type="submit">
+                <a class="btn btn-primary" href="resultados.html">
                   <i class="fas fa-search fa-sm"></i>
-                </button>
+                </a>
               </div>
             </div>
           </form>
@@ -165,45 +166,45 @@
               </a>
               <!-- Dropdown - Alerts -->
               <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                aria-labelledby="alertsDropdown">
-                <h6 class="dropdown-header">
+              aria-labelledby="alertsDropdown">
+              <h6 class="dropdown-header">
                   Libros en carrito
-                </h6>
-                <a class="dropdown-item d-flex align-items-center" href="#">
+              </h6>
+              <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                      <i class="fas fa-file-alt text-white"></i>
-                    </div>
-                  </div>
-                  <div>
-                    <div class="small text-gray-500">December 12, 2019</div>
-                    <span class="font-weight-bold">Lorem ipsum dolor sit amet.</span>
-                  </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
-                  <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                        <i class="fas fa-file-alt text-white"></i>
+                      <div class="icon-circle bg-success">
+                          <i class="fas fa-file-alt text-white"></i>
                       </div>
                   </div>
                   <div>
-                    <div class="small text-gray-500">December 7, 2019</div>
-                    Lorem ipsum dolor sit amet.
+                      <div class="small text-gray-500">Autor del libro</div>
+                      <span class="font-weight-bold">Titulo del libro</span>
                   </div>
-                </a>
-                <a class="dropdown-item d-flex align-items-center" href="#">
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
                   <div class="mr-3">
-                    <div class="icon-circle bg-success">
-                        <i class="fas fa-file-alt text-white"></i>
+                      <div class="icon-circle bg-success">
+                          <i class="fas fa-file-alt text-white"></i>
                       </div>
                   </div>
                   <div>
-                    <div class="small text-gray-500">December 2, 2019</div>
-                    Lorem ipsum dolor sit amet.
+                      <div class="small text-gray-500">Autor del libro</div>
+                      Titulo del libro
                   </div>
-                </a>
-                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-              </div>
+              </a>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="mr-3">
+                      <div class="icon-circle bg-success">
+                          <i class="fas fa-file-alt text-white"></i>
+                      </div>
+                  </div>
+                  <div>
+                      <div class="small text-gray-500">Autor del libro</div>
+                      Titulo del libro
+                  </div>
+              </a>
+              <a class="dropdown-item text-center small text-gray-500" href="shoppingCar.html">Ver todos los libros</a>
+          </div>
             </li>
 
             <div class="topbar-divider d-none d-sm-block"></div>
@@ -237,13 +238,13 @@
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Resultados de Busqueda</h1>
+          </div>
           <div class="row">
 
             <div class="col-12">
               <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Resultados de Busqueda</h6>
-                </div>
                 <div class="card-body">
 
                     <style>
@@ -262,16 +263,17 @@
                             <img class="mx-auto d-block" src="img/books/41pdwkGylyL._AC_UY218_.jpg" alt="Libro 1">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9 col-xl-10">
-                            <h3><strong><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></strong></h3>
+                            <h3><strong><a href="showDetailBook.html">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></strong></h3>
                             <p class=""><strong>Autor: </strong>Lorem ipsum dolor sit amet consectetur. </p>
                             <p class=""><strong>Disponibilidad: </strong> 4/6</p>
-                            <p class="description"><strong>Descripción: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus rerum porro facilis, veritatis magnam, vero molestiae exercitationem perferendis voluptates sed culpa ex! Fuga aliquam ipsa assumenda animi doloremque magni!</p>
                             <p>
-                                <strong>Categorías: </strong>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                            </p>
+                              <strong>Categorías: </strong>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                          </p>
+                            <p class="description"><strong>Descripción: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus rerum porro facilis, veritatis magnam, vero molestiae exercitationem perferendis voluptates sed culpa ex! Fuga aliquam ipsa assumenda animi doloremque magni!</p>
+                            
                             <p>
                                 <a href="#" class="btn btn-sm btn-success btn-icon-split">
                                     <span class="icon text-white-50">
@@ -299,13 +301,14 @@
                             <h3><strong><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></strong></h3>
                             <p class=""><strong>Autor: </strong>Lorem ipsum dolor sit amet consectetur. </p>
                             <p class=""><strong>Disponibilidad: </strong> 4/6</p>
-                            <p class="description"><strong>Descripción: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus rerum porro facilis, veritatis magnam, vero molestiae exercitationem perferendis voluptates sed culpa ex! Fuga aliquam ipsa assumenda animi doloremque magni!</p>
                             <p>
-                                <strong>Categorías: </strong>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                            </p>
+                              <strong>Categorías: </strong>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                          </p>
+                            <p class="description"><strong>Descripción: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus rerum porro facilis, veritatis magnam, vero molestiae exercitationem perferendis voluptates sed culpa ex! Fuga aliquam ipsa assumenda animi doloremque magni!</p>
+                            
                             <p>
                                 <a href="#" class="btn btn-sm btn-success btn-icon-split">
                                     <span class="icon text-white-50">
@@ -333,13 +336,14 @@
                             <h3><strong><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></strong></h3>
                             <p class=""><strong>Autor: </strong>Lorem ipsum dolor sit amet consectetur. </p>
                             <p class=""><strong>Disponibilidad: </strong> 4/6</p>
-                            <p class="description"><strong>Descripción: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus rerum porro facilis, veritatis magnam, vero molestiae exercitationem perferendis voluptates sed culpa ex! Fuga aliquam ipsa assumenda animi doloremque magni!</p>
                             <p>
-                                <strong>Categorías: </strong>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                            </p>
+                              <strong>Categorías: </strong>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                          </p>
+                            <p class="description"><strong>Descripción: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus rerum porro facilis, veritatis magnam, vero molestiae exercitationem perferendis voluptates sed culpa ex! Fuga aliquam ipsa assumenda animi doloremque magni!</p>
+                            
                             <p>
                                 <a href="#" class="btn btn-sm btn-success btn-icon-split">
                                     <span class="icon text-white-50">
@@ -368,13 +372,14 @@
                             <h3><strong><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></strong></h3>
                             <p class=""><strong>Autor: </strong>Lorem ipsum dolor sit amet consectetur. </p>
                             <p class=""><strong>Disponibilidad: </strong> 4/6</p>
-                            <p class="description"><strong>Descripción: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus rerum porro facilis, veritatis magnam, vero molestiae exercitationem perferendis voluptates sed culpa ex! Fuga aliquam ipsa assumenda animi doloremque magni!</p>
                             <p>
-                                <strong>Categorías: </strong>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                            </p>
+                              <strong>Categorías: </strong>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                          </p>
+                            <p class="description"><strong>Descripción: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus rerum porro facilis, veritatis magnam, vero molestiae exercitationem perferendis voluptates sed culpa ex! Fuga aliquam ipsa assumenda animi doloremque magni!</p>
+                            
                             <p>
                                 <a href="#" class="btn btn-sm btn-success btn-icon-split">
                                     <span class="icon text-white-50">
@@ -403,13 +408,14 @@
                             <h3><strong><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></strong></h3>
                             <p class=""><strong>Autor: </strong>Lorem ipsum dolor sit amet consectetur. </p>
                             <p class=""><strong>Disponibilidad: </strong> 4/6</p>
-                            <p class="description"><strong>Descripción: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus rerum porro facilis, veritatis magnam, vero molestiae exercitationem perferendis voluptates sed culpa ex! Fuga aliquam ipsa assumenda animi doloremque magni!</p>
                             <p>
-                                <strong>Categorías: </strong>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                                <span class="badge badge-secondary badge-pill">Random</span>
-                            </p>
+                              <strong>Categorías: </strong>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                              <span class="badge badge-secondary badge-pill">Random</span>
+                          </p>
+                            <p class="description"><strong>Descripción: </strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusamus rerum porro facilis, veritatis magnam, vero molestiae exercitationem perferendis voluptates sed culpa ex! Fuga aliquam ipsa assumenda animi doloremque magni!</p>
+                            
                             <p>
                                 <a href="#" class="btn btn-sm btn-success btn-icon-split">
                                     <span class="icon text-white-50">
